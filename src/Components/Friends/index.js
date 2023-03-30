@@ -11,7 +11,7 @@ import {
 } from "firebase/database";
 import { useSelector } from "react-redux";
 import { Block } from "@mui/icons-material";
-
+// Anas
 const Friends = () => {
   const [frndlist, setfrndlist] = useState([]);
   const db = getDatabase();
