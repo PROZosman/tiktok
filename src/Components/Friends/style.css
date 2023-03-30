@@ -66,6 +66,22 @@
 
 .friends_wrapper:last-child {
     border-bottom: none;
-    }.group_item_wrapper:last-child {
+    }
+    
+    
+    .group_item_wrapper:last-child {
         border-bottom: none;
         }
+
+
+
+
+        .friends::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 40px;
+            background-color: #dfdfdf;
+          }
+          .friends::-webkit-scrollbar-thumb {
+            border-radius: 40px;
+            background-color: #5f35f5;
+          }
