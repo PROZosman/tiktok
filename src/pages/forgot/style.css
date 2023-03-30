@@ -1,0 +1,35 @@
+
+.forgot-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  
+}
+
+.inner_forgot {
+    
+    width: 655px;
+    background-color: #f9f9f9 ;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+
+.forgot-header {
+font-size: 24px;
+color: var(--secondary-color);
+font-weight: 500;
+}
+
+.forgot-header {
+    margin-bottom: 25px;
+}
+
+.forgot-btn {
+    width: 20% !important;
+    padding: 12px 10px !important;
+    border-radius: 10px !important;
+    background-color: var(--primary-color) !important;
+    font-family: var(--secondary-font) !important;
+}
