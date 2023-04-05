@@ -4,8 +4,14 @@ import UserSlice from '../counter/UserSlice';
 
 export const Store = configureStore({
   reducer: {
-  LogIn :  UserSlice
-},
+  LogIn :  UserSlice,
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
+  
+}
+
 });
 
 export default Store;

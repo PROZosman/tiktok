@@ -33,19 +33,18 @@ const Friends = () => {
     // Block 
 
     const handleBlock = (item) => {
-  if (user.uid == item.senderid || user.uid == item.reciverid ){
+  if (user.uid == item.senderid){
    
     set(push(ref(db,"block")),{
 
         block : item.recivername,
-        block : item.reciverid,
+        blockid : item.reciverid,
         blockedby : item.sendername,
-        blockby :  item.senderid,
+        blockbyid :  item.senderid,
     }).then(()=>{
-        remove(ref(db, "Friends/" + item.id));
+        remove(ref(db, "Friends/" + item.id))
     })
-    
- }};
+}};
 
  // handleUnfriend 
 
@@ -62,7 +61,7 @@ const Friends = () => {
 
             {
 
-frndlist.map((item, i)=>(
+ frndlist.map((item, i)=>(
 
     <div className="friends_wrapper" key={i}>
                 <div className='friends_images'></div>
