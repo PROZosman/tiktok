@@ -1,67 +1,66 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import "./style.css";
-import Button from '@mui/material/Button';
-import { getDatabase, ref, onValue, push, set, remove } from "firebase/database";
-import { useSelector } from 'react-redux';
-import { Block } from '@mui/icons-material';
-
+import Button from "@mui/material/Button";
+import {
+  getDatabase,
+  ref,
+  onValue,
+  push,
+  set,
+  remove,
+} from "firebase/database";
+import { useSelector } from "react-redux";
+import { Block } from "@mui/icons-material";
 
 const Friends = () => {
-
   const [frndlist, setfrndlist] = useState([]);
   const db = getDatabase();
-  const user = useSelector ((users) => users.LogIn.login);
+  const user = useSelector((users) => users.LogIn.login);
 
+  useEffect(() => {
+    const starCountRef = ref(db, "Friends");
+    onValue(starCountRef, (snapshot) => {
+      let frndArr = [];
+      snapshot.forEach((item) => {
+        frndArr.push({ ...item.val(), id: item.key });
+      });
+      setfrndlist(frndArr);
+    });
+  }, []);
 
-
-  useEffect ( ()=> {
-    
-        const starCountRef = ref(db, 'Friends');
-        onValue(starCountRef, (snapshot) => {
-            let frndArr=[]
-            snapshot.forEach((item)=>{
-               frndArr.push({...item.val(), id:item.key});
-          });
-          setfrndlist(frndArr);
-        });
-    
-    }, [])
-
-
- 
-
-    // Block 
+  // Block
 
     const handleBlock = (item) => {
-  if (user.uid == item.senderid){
+  if (user.uid == item.senderid || user.uid == item.reciverid ){
    
     set(push(ref(db,"block")),{
 
         block : item.recivername,
-        blockid : item.reciverid,
+        block : item.reciverid,
         blockedby : item.sendername,
-        blockbyid :  item.senderid,
+        blockby :  item.senderid,
     }).then(()=>{
-        remove(ref(db, "Friends/" + item.id))
+        remove(ref(db, "Friends/" + item.id));
     })
-}};
+    
+ }};
 
  // handleUnfriend 
 
- const handleUnfriend = (item) => {
+  const handleUnfriend = (item) => {
     remove(ref(db, "Friends/" + item.id));
- }
+  };
 
-    return (
-        <div className='friends'>
-            <div className="friends_header">
-                <h4>Friends</h4>
-            </div>
+  return (
+    <div className="friends">
+      <div className="friends_header">
+        <h4>Friends</h4>
+      </div>
 
 
             {
 
- frndlist.map((item, i)=>(
+frndlist.map((item, i)=>(
 
     <div className="friends_wrapper" key={i}>
                 <div className='friends_images'></div>
@@ -80,7 +79,9 @@ const Friends = () => {
             }
 
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
 export default Friends;
