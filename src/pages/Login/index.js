@@ -18,7 +18,6 @@ import { LogingUser } from '../../features/counter/UserSlice';
 
 
 
-
 const Login = () => {
 
   const [showPass, setShowpass] = useState("password");
@@ -32,7 +31,7 @@ const Login = () => {
 
   const handleGoogleauth = () => {
     signInWithPopup(auth, googleprovider)
-      .then(() => { navigate("/") })
+      
   };
 
   // facebookauthentication 

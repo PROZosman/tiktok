@@ -23,7 +23,7 @@ const Userlist = () => {
         onValue(starCountRef, (snapshot) => {
             const userarr = [];
             snapshot.forEach((userlists) => {
-                if( user.uid !== userlists.key) {
+                if( user.uid != userlists.key) {
                     userarr.push({...userlists.val(), id: userlists.key});
                 }
             });
@@ -71,7 +71,7 @@ useEffect(()=>{
 
 
 
-// show friendrequest
+//  showfriendrequest
 
 useEffect(()=> {
     
@@ -103,27 +103,7 @@ useEffect(()=> {
                             
 
                             <div className='Userlist_btn'>
-                      {/* {
 
-    friendreq.includes (item.id + user.uid) || 
-    friendreq.includes (user.uid + item.id)  ? 
-    
-   
-        <Button variant="contained" disabled >Friends</Button>
-    
-               : 
-    friendreq.includes (item.id + user.uid) || 
-    friendreq.includes (user.uid + item.id)  ? 
-    
-   
-        <Button  variant="contained" onClick={()=> handleSentRequest} disabled >Cancle Friends</Button>
-    
-               : 
-
-        <Button  variant="contained" onClick={()=> handleSentRequest} disabled >Sent Friends</Button>
-    
-        
-        } */}
 
 
 {
