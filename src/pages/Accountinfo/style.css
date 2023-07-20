@@ -51,3 +51,6 @@ margin-top: 50px;
     -webkit-text-fill-color: var(--black) !important;
 }
 
+.account_info button {
+    background-color: red !important;
+}
