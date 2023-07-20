@@ -1,0 +1,92 @@
+
+.reg-header {
+    margin-bottom: 34px;
+}
+
+
+.reg-header h3 {
+    font-family: var(--secondary-font --secondary-font);
+    font-size: 34px;
+    color: var(--title-color);
+    font-weight: 700px;
+    text-transform: capitalize;
+}
+
+.reg-header p {
+    font-family: var(--secondary-font --secondary-font);
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 400px;
+    text-transform: capitalize;
+}
+
+.reg-password {
+    position: relative !important;
+}
+
+.reg-eyes {
+    position: absolute !important;
+    top: 42%;
+    transform: translateY(-45%);
+    right: 36%;
+    cursor: pointer;
+}
+
+
+.signup_img img {
+    width: 100%;
+}
+
+.input-design {
+  width: 70% !important;
+  margin-bottom: 15px !important;
+}
+
+ .reg-buttons {
+  width: 70% !important;
+  padding: 12px 10px !important;
+  border-radius: 50px !important;
+  background-color: var(--primary-color) !important;
+  font-family: var(--secondary-font) !important;
+} 
+
+
+.reg-link {
+    width: 70%;
+  }
+  
+.reg-link p {
+    font-family: var(--rare-font) !important;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--secondary-color);
+    margin-top: 15px;
+  }
+  
+.reg-link p a {
+    color: var(--red-orange);
+}
+
+
+
+.inputs-from label {
+    color: var(--black) !important;
+}
+
+
+.reg-link p{
+    color: var(--black) !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    border: 1px solid #fff !important;
+    border-radius: 5px !important;   
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    color: var(--black) !important;
+}
+
+  
+
+  

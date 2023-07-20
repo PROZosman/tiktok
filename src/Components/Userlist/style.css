@@ -1,0 +1,84 @@
+.Userlist {
+  width: 100%;
+  border-radius: 20px;
+  height: 383px;
+  background-color: var(--white);
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.Userlist_header h4 {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+
+}
+
+.Userlist_item_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+.Userlist_images {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+
+.Userlist_images img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+
+.Userlist_name {
+  width: 60%;
+}
+
+.Userlist_name h5 {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  
+}
+
+.Userlist_btn {
+  width: 30%;
+}
+
+.Userlist_btn button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  border-radius: 5px;
+  background-color: var(--red-orange);
+  color: #fff;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Userlist_item_wrapper:last-child {
+  border-bottom: none;
+}
+
+.Userlist::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 40px;
+  background-color: #dfdfdf;
+}
+.Userlist::-webkit-scrollbar-thumb {
+  border-radius: 40px;
+  background-color: #5f35f5;
+}

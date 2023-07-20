@@ -1,0 +1,124 @@
+ .login-header {
+    margin-bottom: 34px;
+}
+
+
+.login-header h3 {
+    font-family: var(--secondary-font);
+    font-size: 34px;
+    color: var(--title-color);
+    font-weight: 700px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.login-password {
+    position: relative !important;
+} 
+
+ .login-form{
+    width: 100% !important;
+ }
+
+ .login-input-design {
+    width: 100% !important;
+    margin-bottom: 15px !important;
+ }
+
+ .login-buttons {
+    width: 100% !important;
+  padding: 12px 10px !important;
+  border-radius: 50px !important;
+  background-color: var(--primary-color) !important;
+  font-family: var(--secondary-font) !important;
+ }
+
+ .login-eyes {
+    position: absolute !important;
+    top: 42%;
+    transform: translateY(-45%);
+    right: 6%;
+    cursor: pointer;
+}
+
+.avater {
+    text-align: center;
+}
+
+.avater img {
+    width: 200px;    
+}
+
+.login-link p a {
+    color: var(--red-orange);
+}
+
+.login-link {
+    width: 100%;
+  }
+  
+.login-link p {
+    font-family: var(--rare-font) !important;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--secondary-color);
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .authentication {
+    border: 1px solid var(--border-colour);
+    border: 1px solid var( --border-color);
+    width: 200px;
+    padding: 18px 25px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    margin: 34px 0;
+    cursor: pointer;
+  }
+  
+
+  .auth-text {
+    margin-left: 12px;
+  }
+
+  .authentication p {
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--title-color);
+
+  }    
+
+  .authentication img {
+    width: 20px;
+  }
+
+  .login-auth {
+    display: flex;
+    justify-content: space-around;
+  }
+
+.forgot {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.forgot a:hover {
+ text-decoration: underline;
+}
+
+.css-v4u5dn-MuiInputBase-root-MuiInput-root {
+  color: var( --black) !important;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+  color: var( --black) !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input:focus {
+  border-bottom: 1px solid #fff !important;
+}
+
